@@ -1,79 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseline Youego - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joseline Youego — Consultante en sécurité informatique</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1>Joseline Youego</h1>
-    <p>Cybersecurity & Backend Developer</p>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-left">
+        <h1>Joseline Youego</h1>
+        <p class="tagline">Consultante en sécurité informatique — Forensic • R&D cryptographique • Dev</p>
+      </div>
+      <nav class="header-nav">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#exp">Expériences</a>
+        <a href="#projects">Projets</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>
-      Master Spécialisé en Cybersécurité (Mines Nancy). Passionnée par la cryptographie, 
-      le développement backend et la sécurité des systèmes. 
-      Je conçois des solutions innovantes alliant cybersécurité, data et développement logiciel.
-    </p>
-  </section>
+  <main class="wrap">
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>À propos</h2>
+      <p>
+        Consultante en sécurité informatique, diplômée d'un Mastère Spécialisé en Cybersécurité (Mines Nancy, 2024).
+        Je travaille à l'intersection de la <strong>recherche cryptographique</strong>, de la <strong>réponse à incident / forensic</strong>
+        et du développement sécurisé (APIs & DevOps). :contentReference[oaicite:1]{index=1}
+      </p>
+      <ul class="meta">
+        <li><strong>Téléphone :</strong> +33 (0)7 51 37 74 13</li>
+        <li><strong>Email :</strong> <a href="mailto:youjoseline@gmail.com">youjoseline@gmail.com</a></li>
+        <li><strong>Localisation :</strong> France</li>
+      </ul>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Compétences</h2>
-    <ul class="skills-list">
-      <li>Python / Django / Flask</li>
-      <li>Cryptographie (PSI, isogénies)</li>
-      <li>Docker, GitHub Actions, AWS</li>
-      <li>Forensic & Sécurité applicative</li>
-      <li>React / React Native</li>
-    </ul>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills" class="card">
+      <h2>Compétences & Outils</h2>
+      <div class="grid">
+        <div>
+          <h3>Domaines</h3>
+          <ul>
+            <li>Investigation & réponse à incident (forensic, SIEM, patching)</li>
+            <li>Analyse de malware & rétro-ingénierie</li>
+            <li>Recherche & implémentation cryptographique (PSI, isogénies)</li>
+            <li>CI/CD & tests (GitHub Actions, pytest)</li>
+          </ul>
+        </div>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projets</h2>
-    <div class="project">
-      <h3>🔐 PSI basé sur isogénies</h3>
-      <p>Implémentation d’un protocole Private Set Intersection sécurisé en Python.</p>
-      <a href="https://github.com/joseline25/projet-psi" target="_blank">Voir sur GitHub</a>
+        <div>
+          <h3>Outils & langages</h3>
+          <ul>
+            <li>Python (Django, Flask), C, JavaScript (Node.js), Bash</li>
+            <li>FTK, Autopsy, Volatility, IDA Pro, Ghidra, Wireshark</li>
+            <li>Splunk, ELK, Wazuh, Suricata, Snort</li>
+            <li>Docker, Git, WebAssembly, Libsodium, OpenSSL</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Ces compétences sont listées et détaillées dans ton dossier de compétences. :contentReference[oaicite:2]{index=2}</p>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section id="exp" class="card">
+      <h2>Expériences professionnelles</h2>
+
+      <article class="exp-item">
+        <h3>Consultant Sécurité R&D — ILIADATA</h3>
+        <p class="muted">04/2025 — 09/2025</p>
+        <ul>
+          <li>Conception et prototypage d’un outil de croisement de données basé sur Private Set Intersection (PSI).</li>
+          <li>Implémentations en Python & C ; compilation vers WebAssembly pour intégration SaaS.</li>
+          <li>Benchmarking, sécurisation mémoire, documentation R&D et reporting technique. :contentReference[oaicite:3]{index=3}</li>
+        </ul>
+      </article>
+
+      <article class="exp-item">
+        <h3>Développeuse Backend — CAASITECH GROUP LLC</h3>
+        <p class="muted">04/2023 — 06/2024</p>
+        <ul>
+          <li>APIs sécurisées (Django/Flask), authentification JWT/OAuth2, RBAC.</li>
+          <li>CI/CD (GitHub Actions), tests unitaires, optimisation BDD et hardening applicatif.</li>
+        </ul>
+      </article>
+
+      <article class="exp-item">
+        <h3>Formatrice & Développeuse — Developers Institute</h3>
+        <p class="muted">10/2021 — 03/2023</p>
+        <ul>
+          <li>Animation de modules Python / web, préparation d’exercices et suivi des apprenants.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <h2>Projets sélectionnés</h2>
+
+      <div class="project">
+        <h3>Investigation numérique & réponse à incident</h3>
+        <p>Déploiement d'une infra segmentée (pfSense, LAN/DMZ), simulation d'attaques (EternalBlue, PrintNightmare),
+           forensic mémoire (Volatility) et corrélation via Wazuh SIEM. Rapport complet et recommandations de durcissement.</p>
+      </div>
+
+      <div class="project">
+        <h3>Rétro-ingénierie & analyse de malware</h3>
+        <p>Analyse statique/dynamique d’un binaire Windows, patch anti-debug pour observation contrôlée, rédaction de PoC et recommandations EDR/SIEM.</p>
+      </div>
+
+      <div class="project">
+        <h3>PSI & cryptographie appliquée</h3>
+        <p>Conception et prototype d’un module PSI pour production SaaS (benchmarks, mémoire sécurisée, tests).</p>
+      </div>
+
+      <p class="small">Tu peux lier ici chaque projet à son repo GitHub en remplaçant les descriptions par des liens directs.</p>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section id="challenges" class="card">
+      <h2>Challenges & Lab (Root-Me / HackTheBox)</h2>
+      <p>Section dédiée aux challenges que je documenterai : <em>Forensic</em>, <em>Reverse-engineering</em>, <em>Web / API</em>, <em>Cryptanalyse</em>.</p>
+      <div class="grid-cards">
+        <div class="mini-card">
+          <h4>Forensic</h4>
+          <p>Analyse de dumps mémoire, récupération d'artefacts, timeline d'incident.</p>
+        </div>
+        <div class="mini-card">
+          <h4>Reverse</h4>
+          <p>Désassemblage, patch anti-debug, compréhension d'un malware ciblé.</p>
+        </div>
+        <div class="mini-card">
+          <h4>Web & API</h4>
+          <p>Exploitation logique, tests d'injection, sécurisation des endpoints.</p>
+        </div>
+      </div>
+
+      <p class="small">— Les writeups seront publiés ici avec : contexte, méthodologie, commandes & PoC.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2>Contact & CV</h2>
+      <p>Intéressé(e) par une collaboration ou un poste ?</p>
+      <ul class="meta">
+        <li><strong>Téléphone :</strong> +33 (0)7 51 37 74 13</li>
+        <li><strong>Email :</strong> <a href="mailto:youjoseline@gmail.com">youjoseline@gmail.com</a></li>
+        <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/joselineyouego" target="_blank">linkedin.com/in/joselineyouego</a></li>
+        <li><strong>CV (PDF) :</strong> <a href="Dossier_de_compétences_Joseline_YOUEGO.pdf" target="_blank">Télécharger le dossier de compétences</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 Joseline Youego — Consultante en sécurité informatique</p>
     </div>
-
-    <div class="project">
-      <h3>📱 Application MEDA</h3>
-      <p>Application mobile de télémédecine (React Native + Django REST API).</p>
-      <a href="https://github.com/joseline25/meda-app" target="_blank">Voir sur GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>🌐 AfriTrust</h3>
-      <p>Plateforme e-commerce hybride : importation sécurisée + vente locale (React, Express, MongoDB).</p>
-      <a href="https://github.com/joseline25/afritrust" target="_blank">Voir sur GitHub</a>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:youjoseline@gmail.com">youjoseline@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/joselineyouego" target="_blank">LinkedIn</a></p>
-    <p><a href="CV_Joseline_Youego.pdf" target="_blank">Télécharger mon CV</a></p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Joseline Youego. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
